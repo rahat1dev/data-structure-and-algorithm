@@ -42,5 +42,9 @@ int main()
     insertionArray(pos,value,n,array);
     printArray(array,n+1);
 
+    array[n] = array[pos];
+    array[pos] = value;
+    
+    printArray(array,n+1);
 
 }
